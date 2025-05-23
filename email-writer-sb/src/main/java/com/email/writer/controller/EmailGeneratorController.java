@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/email")
-@CrossOrigin(origins = {"http://localhost:5173","https://mail.google.com"})
+//@CrossOrigin(origins = {"http://localhost:5173","https://mail.google.com"})
 public class EmailGeneratorController {
 
     @Autowired

@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 function App() {
 
+  const backendUrl=import.meta.env.VITE_BACKEND_URL; 
+
   const [emailContent,setEmailContent]=useState('');
   const [tone,setTone]=useState('');
   const [generatedReply,setGeneratedReply]=useState('');
@@ -14,7 +16,7 @@ function App() {
     setLoading(true)
     setError('')
     try {
-      const response=await axios.post("http://localhost:8080/api/email/generate",
+      const response=await axios.post(backendUrl,
         {emailContent,tone});
         setGeneratedReply(response.data);
         setLoading(false)
@@ -31,7 +33,7 @@ function App() {
   return (
     <>
     <Container maxWidth="md" sx={{py:4}}>
-      <Typography variant='h3' component="h1" gutterBottom>Email Replay Generator</Typography>
+      <Typography variant='h4' component="h1" gutterBottom sx={{pl:3}}>Email Reply Generator</Typography>
       <Box sx={{mx:3}}>
         <TextField
           fullWidth

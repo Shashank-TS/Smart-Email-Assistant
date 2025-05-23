@@ -14,6 +14,12 @@ The **Smart Email Assistant** is an AI-powered tool that helps users generate pr
 
 ---
 
+## 🌐 Live Demo
+
+👉 [Click here to view the live app](https://smart-email-assistant-sb.netlify.app/)
+
+---
+
 ## ⚙️ Tech Stack
 
 - **Backend:** Spring Boot + REST API + Gemini AI integration
