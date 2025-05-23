@@ -6,11 +6,11 @@ The **Smart Email Assistant** is an AI-powered tool that helps users generate pr
 
 ## ✨ Features
 
-- 🎙️ Accepts original email content and desired tone (e.g., formal, friendly)
-- 🤖 Uses **Gemini API** to generate context-aware email replies
-- 🧩 Chrome Extension adds an **"AI Reply"** button directly in Gmail
-- 🧠 Smart response generation with minimal user input
-- 💬 Works in both standalone web app and Gmail environments
+-  Accepts original email content and desired tone (e.g., formal, friendly)
+-  Uses **Gemini API** to generate context-aware email replies
+-  Chrome Extension adds an **"AI Reply"** button directly in Gmail
+-  Smart response generation with minimal user input
+-  Works in both standalone web app and Gmail environments
 
 ---
 
@@ -28,9 +28,9 @@ The **Smart Email Assistant** is an AI-powered tool that helps users generate pr
 
 ---
 
-## 🧪 How It Works
+## How It Works
 
-### 🔧 Backend (Spring Boot)
+### Backend (Spring Boot)
 - Exposes a REST API endpoint: `POST: api/email/generate`
 - Accepts JSON:
   ```json
@@ -43,10 +43,18 @@ The **Smart Email Assistant** is an AI-powered tool that helps users generate pr
   {
   "reply": "AI-generated email reply..."
   }
-## 🚀 Getting Started
+## Getting Started
+
+### Clone Repository
+- Clone this repository to your local machine using:
+  
+    ```
+    git clone https://github.com/your-username/Smart-Email-Assistant.git
+    ```
 
 ### Backend
 - Spring Boot:
+  
     ```
     cd email-writer-sb
     ./mvnw spring-boot:run
@@ -54,6 +62,7 @@ The **Smart Email Assistant** is an AI-powered tool that helps users generate pr
 
 ### Frontend
 - React:
+  
     ```
     cd email-writer-react
     npm install
